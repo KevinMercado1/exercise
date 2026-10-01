@@ -6,7 +6,7 @@ import { UpdateReservationDto } from './dto/update-reservation.dto.js';
 export class ReservationService {
   create(createReservationDto: CreateReservationDto) {
     const reservation = {
-      name: createReservationDto.name,
+      name: createReservationDto.customerName,
       email: createReservationDto.email,
       people: createReservationDto.people,
       createAt: new Date(),
